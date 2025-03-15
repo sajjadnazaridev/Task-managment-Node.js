@@ -5,6 +5,7 @@ const port = 8000;
 // import custom modules
 const todos = require('./todos');
 const addTodo = require('./routes/add_todo');
+const updateTodo = require('./routes/update_todo');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -26,12 +27,8 @@ app.use(addTodo);
 app.use('/add', addTodo);
 
 //put a todo
-app.put('/todo/:id', (req, res) => {
-    const index = todos.findIndex(todo => todo.id === parseInt(req.params.id));
-    if (index === -1) return res.status(404).send(`<h1>Todo with id ${req.params.id} not found</h1>`);
-    index.body = req.body.title;
-    res.json(index);
-});
+app.use(updateTodo);
+app.use('/update', updateTodo);
 
 //delete a todo
 app.delete('/todo/:id', (req, res) => {
