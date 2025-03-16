@@ -30,7 +30,7 @@ describe('Todo API', () => {
             .send(newTodo)
             .expect(201);
 
-        console.log(response.body);
+        // console.log(response.body);
 
         expect(response.body).toHaveProperty('_id');
         expect(response.body.title).toBe(newTodo.title);

@@ -39,7 +39,7 @@ exports.createTodo = async (req, res) => {
 // Update a todo
 exports.updateTodo = async (req, res) => {
     try {
-        const todo = await todoServices.updatedTodo(req.params.id);
+        const todo = await todoServices.updateTodo(req.params.id);
         if (!todo) return res.status(404).json({ message: 'Todo not found' });
 
         if (req.body.title !== undefined) todo.title = req.body.title;
