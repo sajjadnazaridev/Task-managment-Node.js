@@ -78,5 +78,5 @@ npm test
 
 ## مشارکت
 
-- گزارش باگ یا پیشنهادات را در [Issues](https://github.com/your-username/your-repo/issues) مطرح کنید.
+- گزارش باگ یا پیشنهادات را در [Issues](https://github.com/sajjadnazaridev/Task-managment-Node.js.git/issues) مطرح کنید.
 - برای مشارکت، از طریق Pull Request اقدام نمایید.
