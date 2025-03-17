@@ -1,4 +1,3 @@
-````markdown
 # API مدیریت وظایف
 
 یک API ساده برای مدیریت وظایف (Todos) و کاربران، توسعه داده شده با Node.js و MongoDB.
@@ -44,11 +43,11 @@
 ### مراحل نصب
 
 1. **کلون پروژه**:
+
    ```bash
    git clone https://github.com/sajjadnazaridev/Task-managment-Node.js.git
    cd Task-managment-Node.js
    ```
-````
 
 2. **نصب وابستگی‌ها**:
 
